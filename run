@@ -1,0 +1,8 @@
+g++ game.cpp -o game -O2 -lsfml-system -lsfml-graphics -lsfml-window
+
+if [ $? -eq "0" ]; then
+    echo "CMP_OK"
+    ./game
+else
+    echo "CMP_ERR"
+fi
